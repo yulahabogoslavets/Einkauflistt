@@ -1,0 +1,18 @@
+.AppBody{
+    background: red;
+    padding: 30px;
+}
+
+.App {
+    display: block;
+    width: 600px;
+    background: bisque;
+    margin: 20px auto;
+    height: 60vh;
+    padding: 20px;
+    text-align: center;
+}
+
+.App form input{
+    margin-right: 20px;
+}
