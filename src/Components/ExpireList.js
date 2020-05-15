@@ -3,7 +3,12 @@ import TextField from "@material-ui/core/TextField";
 
 function ExpireList (props) {
 
-    const expArr=JSON.parse(localStorage.getItem('expArr'));
+    let expArr = [];
+    if(localStorage.getItem('expArr')!==null){
+     expArr=JSON.parse(localStorage.getItem('expArr'));}
+    else{
+        expArr = []
+    }
             const List= expArr.map(elem=>{
             return(
                 <React.Fragment>
